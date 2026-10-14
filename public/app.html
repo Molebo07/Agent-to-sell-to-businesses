@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>InTouch AI Operator Console</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body class="dashboard-body">
+    <aside class="sidebar">
+      <div class="brand inline">
+        <span class="brand-mark">I</span>
+        <span>InTouch AI</span>
+      </div>
+
+      <nav class="sidebar-nav">
+        <a class="active" href="#">Overview</a>
+        <a href="#">Tenants</a>
+        <a href="#">Conversations</a>
+        <a href="#">Knowledge</a>
+        <a href="#">Billing</a>
+      </nav>
+    </aside>
+
+    <main class="dashboard-main">
+      <header class="dashboard-header">
+        <div>
+          <p class="eyebrow">Operator Console</p>
+          <h1>Overview</h1>
+        </div>
+        <button class="button button-primary">Create tenant</button>
+      </header>
+
+      <section class="stats-grid">
+        <div class="stat-card">
+          <span>Live tenants</span>
+          <strong>64</strong>
+          <small>+12% month-on-month</small>
+        </div>
+        <div class="stat-card">
+          <span>Monthly messages</span>
+          <strong>181k</strong>
+          <small>+22% vs last month</small>
+        </div>
+        <div class="stat-card">
+          <span>Resolution rate</span>
+          <strong>86.4%</strong>
+          <small>Target 90% by Q1</small>
+        </div>
+        <div class="stat-card warning">
+          <span>Handoff rate</span>
+          <strong>11.7%</strong>
+          <small>4 escalations need review</small>
+        </div>
+      </section>
+
+      <section class="panel-grid">
+        <div class="panel">
+          <div class="panel-header">
+            <h2>Active tenants</h2>
+            <a href="#">View all</a>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <th>Business</th>
+                <th>Plan</th>
+                <th>Avg reply</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Nandi Nails & Spa</td>
+                <td>Growth</td>
+                <td>2.1s</td>
+                <td><span class="status-pill ok">Healthy</span></td>
+              </tr>
+              <tr>
+                <td>Cape Coastal Realty</td>
+                <td>Scale</td>
+                <td>1.8s</td>
+                <td><span class="status-pill ok">Healthy</span></td>
+              </tr>
+              <tr>
+                <td>Umlilo Pharmacy</td>
+                <td>Starter</td>
+                <td>3.4s</td>
+                <td><span class="status-pill warn">Review</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="panel">
+          <div class="panel-header">
+            <h2>Open handoffs</h2>
+            <a href="#">Escalate queue</a>
+          </div>
+          <ul class="handoff-list">
+            <li>
+              <div>
+                <strong>Refund policy question</strong>
+                <small>Umlilo Pharmacy · 2 mins ago</small>
+              </div>
+              <span class="status-pill warn">Priority</span>
+            </li>
+            <li>
+              <div>
+                <strong>Property viewing request</strong>
+                <small>Cape Coastal Realty · 9 mins ago</small>
+              </div>
+              <span class="status-pill ok">Queued</span>
+            </li>
+            <li>
+              <div>
+                <strong>Booking confirmation</strong>
+                <small>Nandi Nails & Spa · 14 mins ago</small>
+              </div>
+              <span class="status-pill ok">Resolved</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

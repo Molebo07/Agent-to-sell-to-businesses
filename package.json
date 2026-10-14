@@ -1,0 +1,23 @@
+{
+  "name": "agent-to-sell-to-businesses",
+  "version": "1.0.0",
+  "description": "Multi-tenant AI customer agent platform prototype for South African SMBs",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "build": "node -e \"console.log('Static prototype ready')\""
+  },
+  "keywords": [
+    "saas",
+    "ai",
+    "customer-support",
+    "whatsapp",
+    "widget"
+  ],
+  "author": "Molebo",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
